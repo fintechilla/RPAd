@@ -1,0 +1,17 @@
+
+
+click(Pattern("AccountName.png"))
+click(Pattern("Cases424.png"))
+click(Pattern("ChromoLogo959.png"))
+click(Pattern("RefreshBttn933.png"))
+click(Pattern("SaveBtn455.png"))
+click(Pattern("StatusLabel421.png"))
+click(Pattern("WordLogo956.png"))   
+click(Pattern("CommentEdit559.png").targetOffset(261,43))
+click("NewComment603.png")
+click("633CaseComments.png")
+click("New633.png")
+click("CaseCommentsInside634.png")
+click(Pattern("CommentDetails635.png").targetOffset(255,60))
+click(Pattern("SaveBottom636.png").similar(0.83).targetOffset(0,-5))
+click("CaseDetail1143.png")

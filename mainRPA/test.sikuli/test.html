@@ -1,0 +1,267 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>test.sikuli</h2> <a href="test.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> datetime <span class="kw">import</span> datetime
+n = <span class="dig">0</span>
+<span class="kw">while</span> True:
+    currentDT = datetime.now()
+    dateTime = currentDT.strftime(<span class="str">"%Y-%m-%d-%H:%M:%S"</span>)
+    n = n + <span class="dig">1</span>
+    <span class="kw">try</span>:
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+        case=<span class="skw">find</span>(<img src="1496687622535.png" />).below(<span class="dig">18</span>)
+        <span class="skw">click</span>(case)
+        <span class="skw">wait</span>(<span class="dig">1</span>)
+        <span class="skw">wait</span>(<img src="1563200711269.png" />,<span class="dig">15</span>)
+        <span class="kw">print</span>(<span class="str">"M: past Find Duplicates"</span>)
+        <span class="skw">wait</span>(<span class="dig">3</span>)
+        <span class="cmt">#wait("1562963839266.png", 30)</span>
+        <span class="kw">print</span>(<span class="str">"Date/Time: "</span>, dateTime)
+        <span class="kw">if</span> exists(Pattern(<img src="1539696617664.png" />).similar(<span class="dig">0.79</span>)):
+            <span class="kw">print</span>(<span class="str">"Account Merge +++"</span>)
+            <span class="kw">import</span> merge
+            reload(merge)
+
+        <span class="kw">elif</span> exists(Pattern(<img src="1565011562815.png" />).similar(<span class="dig">0.79</span>)):
+            <span class="kw">print</span>(<span class="str">"test: Other Sub Reason == SalesEdge/Altify"</span>)
+            hover(Pattern(<img src="1565011830290.png" />).similar(<span class="dig">0.72</span>))
+            <span class="skw">click</span>(<img src="1565011847339.png" />)
+            <span class="skw">wait</span>(<span class="dig">2</span>)
+            <span class="skw">click</span>(Pattern(<img src="1565011959895.png" />).targetOffset(<span class="dig">46</span>,<span class="dig">30</span>))
+            <span class="skw">type</span>(<span class="str">"This case cannot be completed by ST Automated User. Thank you"</span>)
+            <span class="skw">wait</span>(<span class="dig">1</span>)
+            <span class="skw">click</span>(<img src="1565012071914.png" />)
+            <span class="skw">doubleClick</span>(Pattern(<img src="1565012120268.png" />).similar(<span class="dig">0.77</span>))
+            <span class="skw">type</span>(<span class="str">"On Hold"</span>)
+            <span class="skw">wait</span>(<span class="dig">3</span>)
+
+        <span class="kw">elif</span> exists(<img src="1505938718126.png" />):
+            <span class="kw">print</span>(<span class="str">"Password Reset +++"</span>)
+            <span class="cmt">#popup("Password Reset +++")</span>
+            <span class="kw">import</span> password
+            reload(password)
+        <span class="kw">elif</span> exists(<img src="1539711944981.png" />):
+            <span class="kw">print</span>(<span class="str">"Rate Center Incorrect +++"</span>)
+            <span class="kw">import</span> ratecenter
+            reload(ratecenter)
+        <span class="kw">elif</span> exists(<img src="1539290166288.png" />):
+            <span class="kw">print</span>(<span class="str">"PRISM +++"</span>)
+            <span class="kw">import</span> prism
+            reload(prism)
+        <span class="kw">elif</span> exists(Pattern(<img src="1512674665954.png" />).similar(<span class="dig">0.75</span>)):
+            <span class="kw">print</span>(<span class="str">"A Hidden Offer +++"</span>)
+            <span class="kw">import</span> hiddenoffer
+            reload(hiddenoffer)
+        <span class="kw">elif</span> exists(<img src="1546531630030.png" />):
+            <span class="kw">print</span>(<span class="str">"CPQ Ethernet Test +++"</span>)
+            <span class="kw">import</span> tenmftest
+            reload(tenmftest)
+        <span class="kw">elif</span> exists(<img src="1518634010154.png" />):
+            <span class="kw">print</span>(<span class="str">"ARCF +++"</span>)
+            <span class="kw">import</span> rcf
+            reload(rcf)
+        <span class="kw">elif</span> exists(<img src="1518812807938.png" />):
+            <span class="kw">print</span>(<span class="str">"ADIR +++"</span>)
+            <span class="kw">import</span> dir
+            reload(dir)
+        <span class="kw">elif</span> exists(<img src="1545431550191.png" />):
+            <span class="kw">print</span>(<span class="str">"Disco Workaround +++"</span>)
+            <span class="kw">import</span> disco
+            reload(disco)
+        <span class="kw">elif</span> exists(<img src="1545079501583.png" />):
+            <span class="kw">print</span>(<span class="str">"CPQ Offer Report +++"</span>)
+            <span class="kw">import</span> OCPQ
+            reload(OCPQ)
+        <span class="kw">elif</span> exists(Pattern(<img src="1565011562815.png" />).similar(<span class="dig">0.79</span>)):
+            <span class="kw">print</span>(<span class="str">"test: Other Sub Reason == SalesEdge/Altify"</span>)
+            hover(Pattern(<img src="1565011830290.png" />).similar(<span class="dig">0.72</span>))
+            <span class="skw">click</span>(<img src="1565011847339.png" />)
+            <span class="skw">wait</span>(<span class="dig">2</span>)
+            <span class="skw">click</span>(Pattern(<img src="1565011959895.png" />).targetOffset(<span class="dig">46</span>,<span class="dig">30</span>))
+            <span class="skw">type</span>(<span class="str">"This case cannot be completed by ST Automated User. Thank you"</span>)
+            <span class="skw">wait</span>(<span class="dig">1</span>)
+            <span class="skw">click</span>(<img src="1565012071914.png" />)
+            <span class="skw">doubleClick</span>(Pattern(<img src="1565012120268.png" />).similar(<span class="dig">0.77</span>))
+            <span class="skw">type</span>(<span class="str">"On Hold"</span>)
+            <span class="skw">wait</span>(<span class="dig">3</span>)
+
+    <span class="kw">except</span> FindFailed:
+        <span class="kw">print</span>(<span class="str">"T: FindFailed occurred @loop: "</span>, n)
+        <span class="skw">sleep</span>(<span class="dig">10</span>)
+        <span class="kw">if</span> exists(<img src="1496687787775.png" />):
+            <span class="skw">click</span>(<img src="1496687787775.png" />)
+        <span class="kw">else</span>:
+            <span class="skw">wait</span>(<span class="dig">1</span>)
+            <span class="skw">type</span>(<span class="str">"f"</span>, KeyModifier.CTRL)
+            <span class="skw">wait</span>(<span class="dig">0.5</span>)
+            <span class="skw">type</span>(<span class="str">"dashboards"</span>)
+            <span class="skw">wait</span>(<span class="dig">0.5</span>)
+            <span class="kw">if</span> exists(<img src="1497638800372.png" />):
+                <span class="skw">click</span>(<img src="1497638800372.png" />)
+                <span class="kw">print</span>(<span class="str">"T: Offers/Cases/Products exixsts"</span>)
+                <span class="skw">wait</span>(<img src="1496688137166.png" />,<span class="dig">30</span>)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                p=<span class="skw">find</span>(<img src="1496688167919.png" />).left(<span class="dig">70</span>)
+                <span class="skw">click</span>(p)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                <span class="skw">type</span>(<span class="str">'x'</span>)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="skw">click</span>(<img src="1496688167919.png" />)
+                <span class="skw">wait</span>(<img src="1518647326972.png" />,<span class="dig">60</span>)
+                case=<span class="skw">find</span>(<img src="1496687622535.png" />).below(<span class="dig">18</span>)
+                <span class="skw">click</span>(case)
+                <span class="skw">wait</span>(<img src="1500561515389.png" />,<span class="dig">30</span>)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                w=<span class="skw">find</span>(<img src="1496867016597.png" />).right(<span class="dig">70</span>)
+                <span class="skw">doubleClick</span>(w)
+                <span class="skw">wait</span>(<span class="dig">2</span>)
+                <span class="skw">type</span>(<span class="str">'o'</span>)
+                <span class="skw">sleep</span>(<span class="dig">3</span>)
+                <span class="skw">click</span>(<img src="1496865862017.png" />)
+                <span class="skw">wait</span>(<img src="1500561515389.png" />,<span class="dig">20</span>)
+                <span class="skw">click</span>(<img src="1496869195132.png" />)
+                <span class="skw">wait</span>(<img src="1496688137166.png" />,<span class="dig">15</span>)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                j=<span class="skw">find</span>(<img src="1496688167919.png" />).left(<span class="dig">70</span>)
+                <span class="skw">click</span>(j)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                <span class="skw">type</span>(<span class="str">'x'</span>)
+                <span class="skw">click</span>(<img src="1496688167919.png" />)
+                <span class="skw">wait</span>(<img src="1496687787775.png" />,<span class="dig">15</span>)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="skw">type</span>(<span class="str">"o"</span>, KeyModifier.ALT + KeyModifier.SHIFT)
+                <span class="kw">print</span> (<span class="str">"T: o - On-Hold"</span>)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="skw">click</span>(<img src="1496687787775.png" />)
+            <span class="kw">else</span>:
+                <span class="kw">print</span>(<span class="str">"T: Offers/Cases/Products NOT exists"</span>)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                <span class="skw">type</span>(<span class="str">"f"</span>, KeyModifier.CTRL)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="skw">type</span>(<span class="str">"dashboards"</span>)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="kw">if</span> exists(<img src="1562175491542.png" />):
+                    <span class="kw">print</span>(<span class="str">"T: Warning occurred"</span>)
+                    <span class="skw">type</span>(<span class="str">"w"</span>, KeyModifier.CTRL)
+                    <span class="skw">wait</span>(<span class="dig">2</span>)
+
+
+                <span class="kw">if</span> exists(<img src="1497638800372.png" />):
+                    <span class="skw">click</span>(<img src="1497638800372.png" />)
+                    <span class="kw">print</span>(<span class="str">"T: Click on Offers/Cases/Products"</span>)
+
+                <span class="kw">elif</span> exists(<img src="1562592680738.png" />):
+                    <span class="skw">click</span>(<img src="1562592680738.png" />)
+                    <span class="kw">print</span>(<span class="str">"T: Click on Cases"</span>)
+
+                <span class="kw">elif</span> exists(<img src="1563903264430.png" />):
+                    <span class="skw">click</span>(<img src="1563903264430.png" />)
+
+                <span class="skw">wait</span>(<span class="dig">2</span>)
+                <span class="skw">wait</span>(<img src="1496688137166.png" />,<span class="dig">30</span>)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                p=<span class="skw">find</span>(<img src="1496688167919.png" />).left(<span class="dig">70</span>)
+                <span class="skw">click</span>(p)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                <span class="skw">type</span>(<span class="str">'x'</span>)
+                <span class="skw">click</span>(<img src="1496688167919.png" />)
+                <span class="skw">wait</span>(<img src="1519078277840.png" />)
+                case=<span class="skw">find</span>(<img src="1496687622535.png" />).below(<span class="dig">18</span>)
+                <span class="skw">click</span>(case)
+                <span class="skw">wait</span>(<img src="1500561515389.png" />,<span class="dig">30</span>)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                w=<span class="skw">find</span>(<img src="1496867016597.png" />).right(<span class="dig">70</span>)
+                <span class="skw">doubleClick</span>(w)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                <span class="skw">type</span>(<span class="str">'o'</span>)
+                <span class="kw">print</span>(<span class="str">"T: o - On-Hold due to lack of ?? - from FindFaild"</span>)
+                <span class="skw">sleep</span>(<span class="dig">3</span>)
+                <span class="skw">click</span>(<img src="1496865862017.png" />)
+                <span class="skw">wait</span>(<img src="1500561515389.png" />,<span class="dig">20</span>)
+                <span class="skw">click</span>(<img src="1496869195132.png" />)
+                <span class="skw">wait</span>(<img src="1496688137166.png" />,<span class="dig">15</span>)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                j=<span class="skw">find</span>(<img src="1496688167919.png" />).left(<span class="dig">70</span>)
+                <span class="skw">click</span>(j)
+                <span class="skw">wait</span>(<span class="dig">1</span>)
+                <span class="skw">type</span>(<span class="str">'x'</span>)
+                <span class="skw">click</span>(<img src="1496688167919.png" />)
+                <span class="skw">wait</span>(<img src="1496687787775.png" />,<span class="dig">15</span>)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="skw">type</span>(<span class="str">"o"</span>, KeyModifier.ALT + KeyModifier.SHIFT)
+                <span class="skw">wait</span>(<span class="dig">0.5</span>)
+                <span class="skw">click</span>(<img src="1496687787775.png" />)
+                <span class="skw">wait</span>(<img src="1496687787775.png" />,<span class="dig">15</span>)
+                <span class="skw">click</span>(<img src="1496687787775.png" />)
+</pre>
+</body>
+</html>
