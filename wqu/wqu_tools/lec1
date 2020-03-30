@@ -1,0 +1,23 @@
+# def mult(numbers):
+#     for i in range(len(numbers)):
+#         numbers[i] = numbers[i] * 10
+#
+#     return numbers
+#
+# print(mult([1, 2, 3]))
+
+words = "FIA; Fiber Connect Plus; Voice"
+words = " FISA"
+print(words)
+swords = words.split(";")
+print(swords[0])
+for word in swords:
+    word = word.lstrip(" ")
+
+print("swords:", swords)
+
+if swords[0].lstrip(" ") == "FISA":
+    print(True)
+
+else:
+    print(False)
