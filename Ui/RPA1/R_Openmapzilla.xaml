@@ -1,0 +1,327 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Openmapzilla" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_quickSearchFound" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>576,837</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Openmapzilla_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="24">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="20">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Openmapzilla" sap:VirtualizedContainerService.HintSize="556,777" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="OpenMapzilla: " Name="modNm" />
+      <Variable x:TypeArguments="ui:Browser" Name="mapzillaLogin" />
+      <Variable x:TypeArguments="x:String" Default="V881790" Name="VID" />
+      <Variable x:TypeArguments="x:String" Default="gthb&lt;102" Name="Passwd" />
+      <Variable x:TypeArguments="s:DateTime" Name="timeEnd" />
+      <Variable x:TypeArguments="x:Boolean" Name="loggedIn" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="514,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[modNm + &quot;Start&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="514,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[loggedIn]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="514,483" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" UiBrowser="[mapzillaLogin]" Url="https://mapzilla.twcable.com/mapzilla-web/login.html">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,384" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="warningExists" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,292" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch.Try>
+                <Sequence sap:VirtualizedContainerService.HintSize="735,2673" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Boolean" Name="quickSearchExists" />
+                    <Variable x:TypeArguments="s:DateTime" Name="timeBegin" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'DIV'" sap:VirtualizedContainerService.HintSize="693,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f0adfaeb7d762a673c2b110fc916b908" Selector="&lt;webctrl idx='2' isleaf='1' parentid='loginbox' tag='DIV' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <ui:TypeInto DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBetweenKeys="50" DisplayName="Type Into EID/VID" EmptyField="True" sap:VirtualizedContainerService.HintSize="693,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[VID]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="04b8da69bd2e6d937790e253dcab5b61" Selector="&lt;webctrl id='textfield-1010-inputEl' tag='INPUT' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into PASSWORD" EmptyField="True" sap:VirtualizedContainerService.HintSize="693,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[Passwd]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ecd82bf914a96c8344d3bcc4ed40aef6" Selector="&lt;webctrl id='textfield-1011-inputEl' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="693,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  button-1013-btnIn...'" sap:VirtualizedContainerService.HintSize="693,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3d87fddd83af77bf40c0c9c0a0846a2d" Selector="&lt;webctrl id='button-1013-btnInnerEl' tag='SPAN' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="693,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                  <ui:ImageFound DisplayName="Image Exists 'chrome.exe  MapZilla V2'" Found="[warningExists]" sap:VirtualizedContainerService.HintSize="693,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                    <ui:ImageFound.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                    </ui:ImageFound.Image>
+                    <ui:ImageFound.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:ImageFound.Target>
+                  </ui:ImageFound>
+                  <If Condition="[warningExists]" sap:VirtualizedContainerService.HintSize="693,449" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,300" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[modNm + &quot;warningExists: &quot; + warningExists.ToString]" />
+                        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OK for opened session" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:ClickImage.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:ClickImage.CursorPosition>
+                          <ui:ClickImage.Image>
+                            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAXCAYAAABDArJmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVFhH7ZjNTsJAFIV9pz5UWcBbIG5En0FYgyauAXcmCt2oICtX0vITQ9wo5ec657Z3mEHiT4yzGpKT03PPbUu+ACE9iIYxef1MHtYvpGG1717osvdKF12vXYEL+DAsHERPb/SergmvzWbj3XBwAR+GBXIYBEHAJRyLPm8z+DAsfNSkhK/Xa++GCxcNC4XX19KwVqsVE4R72RIuFqzlcmkt+WxnDQsFCMKdq1vle2cqUeNZuoQaxYCqXckRVbFzGuXZjYSLBStNU/fOoKoUSX5uUCkHlqZxBusW+xm40nmy/zoOXMPCAAThi8XCkY8YQLE5sua9EwWlGev++GZBkZrt7rly4aJhoTCX3OQef60Aw+xHzSIFJz2Vc5hFyX+939+yhhXHMROEu1OHyuqe5ZY979dDCiodddyns1D9RlXKe/dcSbhoWEmS8MCt96mmYIT1vjXvVAIq1Ae6B6TkvkZhUKarvddx4xYsEIQ7VetQ3bdAtft9ecCwDltGF9ZoYJ7vQMJFwxqPxzyAi5zlNgDJXwcF6kH6HFZ7u391pHYUsEfz/Fz/nS1YeLNm6ZVJuGhYk8mEB3CRz3a2YIGgWXplEi4a1nQ69fpGDAsP/0bJjAli6P2zgw/DwmPl6+Gc4vGMZjOvXYHL9XBOHz39bO813U7zAAAAAElFTkSuQmCC" />
+                          </ui:ClickImage.Image>
+                          <ui:ClickImage.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:ClickImage.Target>
+                        </ui:ClickImage>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="272,154" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[modNm + &quot;warningExists: &quot; + warningExists.ToString]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="693,62" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[modNm + &quot;Waiting for Quick Search...&quot;]" />
+                  <ui:UiElementExists DisplayName="Element Exists 'DIV  desktop-innerCt'" Exists="[loggedIn]" sap:VirtualizedContainerService.HintSize="693,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="038a1172046c04494c33c8d2164d9ead" Selector="&lt;webctrl id='desktop-innerCt' tag='DIV' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <If Condition="[loggedIn]" sap:VirtualizedContainerService.HintSize="693,832" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,683" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="s:DateTime">[timeBegin]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="s:DateTime">[System.DateTime.Now]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetAddressFieldInQuickSearch" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="R_GetAddressInQuickSearch.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_addressExists">[quickSearchExists]</OutArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[modNm + &quot;Address in Quick Search done&quot; + quickSearchExists.ToString]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="s:DateTime">[timeEnd]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="s:DateTime">[System.DateTime.Now]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[modNm + &quot;quickSearchExists: &quot; + quickSearchExists.ToString + &quot; time to wait quickSearch: &quot; + (timeEnd - timeBegin).ToString]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[out_quickSearchFound]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[modNm + &quot;loggedIn: &quot; + loggedIn.ToString]" />
+                    </If.Else>
+                  </If>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="693,62" sap2010:WorkflowViewState.IdRef="WriteLine_10" />
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,502" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[modNm + &quot;Time out - quick search appeared&quot;]" />
+                      <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe  MapZilla V2'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="bfa18a15ae3ab46e4c9dddc726731848" WaitForReady="INTERACTIVE" />
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[out_quickSearchFound]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[modNm + &quot;browser closed&quot;]" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+              <TryCatch.Finally>
+                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[out_quickSearchFound]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">[loggedIn]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </TryCatch.Finally>
+            </TryCatch>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
