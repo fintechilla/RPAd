@@ -1,0 +1,8 @@
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\WpfApp4.csprojAssemblyReference.cache
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\MainWindow.g.cs
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\App.g.cs
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\WpfApp4_MarkupCompile.cache
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\WpfApp4_MarkupCompile.lref
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\MainWindow.baml
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\WpfApp4.g.resources
+C:\Developments\CS\Solution1WPF\WpfApp4\obj\Debug\WpfApp4.pdb

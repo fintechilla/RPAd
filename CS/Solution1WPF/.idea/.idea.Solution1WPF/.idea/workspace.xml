@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8542d43-b33a-45eb-beef-e4f8e266518d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WpfApp4/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WpfApp4/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WpfApp4/project.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WpfApp4/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WpfApp4/MainWindow.xaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YwduKEJqW4505vEvoXihJzQaVn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="XamlPreviewOptionsPage" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WpfApp4" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WpfApp4/WpfApp4.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8542d43-b33a-45eb-beef-e4f8e266518d" name="Default Changelist" comment="" />
+      <created>1583857812825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583857812825</updated>
+      <workItem from="1583857817051" duration="5061000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="828" y="169" width="1092" height="538" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583858688091">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="828" y="169" width="1092" height="538" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583858688091" />
+    <state x="1108" y="276" key="EnvironmentVariablesDialog" timestamp="1583858580860">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1108" y="276" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583858580860" />
+    <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1583861958706">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1583861958706" />
+    <state x="651" y="162" key="SettingsEditor" timestamp="1583861917329">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="651" y="162" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583861917329" />
+    <state x="1103" y="322" key="jetbrains.nodejs.interpreters-dialog" timestamp="1583858356601">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1103" y="322" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583858356601" />
+    <state x="851" y="256" key="run.anything.popup" timestamp="1583859132946">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="851" y="256" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583859132946" />
+    <state x="858" y="267" width="672" height="678" key="search.everywhere.popup" timestamp="1583859143492">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="858" y="267" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583859143492" />
+  </component>
+</project>
